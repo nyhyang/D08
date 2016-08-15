@@ -4,16 +4,46 @@
 # Modify the variables so that all of the statements evaluate to True. ########
 ###############################################################################
 
-var1 = 
-var2 = 
-var3 = 
-var4 = 
-var5 = 
-var6 = 
+var1 = 1
+var2 = 'psdfgn'
+var3 = [1, 2, 3, 4, 5]
+var4 = (1, 2, "Hello, Python!")
+var5 = {"happy" : 7, "egg" : "salad", "tuna" : "fish"}
+var6 = 2.0
+
+d = {1:'blue', 2: 'green', 3:'green'}
+def reverse_lookup(dict_, value):
+	# method 1
+	key_or_keys = []
+	for key in dict_:
+		if dict_[key] == value:
+			key_or_keys.append(key)
+	return key_or_keys
+
+		# if values == value:
+		# 	return key
+		# else:
+		# 	return ValueError
+	# method 2
+	# ket_or_keys = []
+	# for key in dict_:
+	# 	if dict_[key] == value:
+	# 		ket_or_keys.append(key)
+	# return ket_or_keys
+
+	# method 3
+	# for key, val in dic_.item():
+	# 	if val == value:
+	# 		key_or_keys.append(key)
+	# return key_or_keys
+
 
 ###############################################################################
 # Don't edit anything below this comment ######################################
 ###############################################################################
+
+print(reverse_lookup(d, 'green'))
+
 
 # integers
 print(type(var1) is int)
