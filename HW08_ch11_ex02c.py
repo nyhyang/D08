@@ -17,7 +17,8 @@ def reverse_lookup_old(d, v):
         if d[k] == v:
             return k
     raise ValueError
-    # How is raise different from return?
+    # How is raise different from return? def first_seven2(items):
+
 
 def reverse_lookup_new(d, v):
     match_list = []
@@ -66,8 +67,8 @@ def get_pledge_list():
 def main():   # DO NOT CHANGE BELOW
 	pledge_histogram = histogram_new(get_pledge_list())
 
-	print(reverse_lookup_new(pledge_histogram, "1"))
-	print(reverse_lookup_new(pledge_histogram, "9"))
+	print(reverse_lookup_new(pledge_histogram, 1))
+	print(reverse_lookup_new(pledge_histogram, 9))
 	print(reverse_lookup_new(pledge_histogram, "Python"))
 
 if __name__ == '__main__':

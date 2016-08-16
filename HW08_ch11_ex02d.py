@@ -35,7 +35,9 @@ def invert_dict_new(d):
     return inverse
 
 def print_hist_newest(d):
-    pass
+    sorted_keylist = sorted(d.keys())
+    for keys in sorted_keylist:
+        print(keys, d.get(keys))
 
 ###############################################################################
 # INSERT COMPLETED CODE FROM HW08_ch11_ex02a BELOW: ###########################
